@@ -1,2 +1,67 @@
-[README.md](https://github.com/user-attachments/files/19828691/README.md)
+# NYC Taxi Fare Predictor 🚕📊
 
+Este proyecto entrena un modelo simple de predicción de tarifas de taxi en Nueva York usando una muestra de datos reales del dataset de Kaggle: [New York City Taxi Fare Prediction](https://www.kaggle.com/competitions/new-york-city-taxi-fare-prediction).
+
+---
+
+## 📁 Estructura del proyecto
+
+```
+nyc-taxi-fare-predictor/
+├── train_sample.csv        <- Muestra reducida del dataset original (menos de 25 MB)
+├── NYC_taxi_model.ipynb    <- Notebook de entrenamiento y predicción con pandas/numpy
+├── README.md               <- Este archivo
+```
+
+---
+
+## 📌 Objetivo
+
+Predecir la tarifa (`fare_amount`) de un viaje en taxi a partir de datos como:
+
+- Fecha y hora de recogida
+- Coordenadas de origen y destino
+- Número de pasajeros
+
+---
+
+## 🛠️ Tecnologías utilizadas
+
+- Python 3.x
+- Pandas
+- Numpy
+
+> 📌 No se utiliza scikit-learn en esta primera fase para alinearse con los temas vistos en clase.
+
+---
+
+## 📈 Modelo utilizado
+
+Se utiliza una **regresión lineal manual** (sin librerías) para relacionar la tarifa con variables seleccionadas como la distancia del viaje y número de pasajeros.
+
+---
+
+## ▶️ Cómo usar el notebook
+
+1. Asegúrate de tener instalado Python con pandas y numpy.
+2. Abre el archivo `NYC_taxi_model.ipynb` con Jupyter Notebook.
+3. Ejecuta las celdas paso a paso para:
+   - Cargar y explorar los datos (`train_sample.csv`)
+   - Preparar las variables
+   - Calcular la regresión
+   - Evaluar y hacer predicciones
+
+---
+
+## 📚 Datos
+
+Los datos provienen de la competencia de Kaggle:
+🔗 [New York City Taxi Fare Prediction](https://www.kaggle.com/competitions/new-york-city-taxi-fare-prediction/data)
+
+Solo se usó una **muestra reducida de 8.000 filas** para facilitar el procesamiento y permitir subirlo a GitHub.
+
+---
+
+## 📬 Contacto
+
+Este proyecto es parte de una práctica de clase. Si tienes dudas o sugerencias, ¡no dudes en contribuir o abrir una issue!
